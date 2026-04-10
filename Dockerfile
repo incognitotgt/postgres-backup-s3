@@ -1,6 +1,4 @@
-ARG ALPINE_VERSION
-FROM alpine:${ALPINE_VERSION}
-ARG TARGETARCH
+FROM alpine:latest
 
 ADD src/install.sh install.sh
 RUN sh install.sh && rm install.sh
